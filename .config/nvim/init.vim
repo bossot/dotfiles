@@ -39,12 +39,18 @@ Plug 'nvim-lualine/lualine.nvim'
 
 call plug#end()
 
-" Lualine configuration
-lua require('lualine').setup {
-  options = { theme = 'gruvbox' }
-}
-
 " Enable syntax highlighting
 syntax on
 filetype plugin indent on
+
+" Lualine configuration
+lua << EOF
+require('lualine').setup {
+  options = {
+    theme = 'gruvbox',
+    section_separators = '',
+    component_separators = ''
+  }
+}
+EOF
 
