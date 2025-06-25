@@ -40,6 +40,9 @@ Plug 'nvim-lualine/lualine.nvim'
 " Copilot Plugin
 Plug 'github/copilot.vim'
 
+" Tree explorer
+Plug 'kyazdani42/nvim-tree.lua'
+
 call plug#end()
 
 " Enable syntax highlighting
