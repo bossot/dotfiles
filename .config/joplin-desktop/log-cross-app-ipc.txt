@@ -1,0 +1,3 @@
+2025-06-02 10:49:52: Starting server using secret key: /Users/aovy8hs/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-11 10:24:13: Starting server using secret key: /Users/aovy8hs/.config/joplin-desktop/ipc_secret_key.txt
+2025-06-13 13:52:49: Starting server using secret key: /Users/aovy8hs/.config/joplin-desktop/ipc_secret_key.txt

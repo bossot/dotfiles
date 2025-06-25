@@ -1,0 +1,6 @@
+creation_rules:
+- unencrypted_regex: "^(apiVersion|metadata|kind|type|name)$"
+  age: 'age1em63kkg4sc098srg9gfnk5cp68vjfkhwuccqkula0s3mg900z4vql99up5'
+stores:
+  yaml:
+    indent: 2

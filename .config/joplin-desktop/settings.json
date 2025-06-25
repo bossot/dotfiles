@@ -1,0 +1,55 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"altInstanceId": "",
+	"editor.codeView": true,
+	"sync.target": 9,
+	"sync.9.path": "https://joplin.ramisclar.cat",
+	"sync.9.username": "santiago.ramis@volkswagen-groupservices.com",
+	"locale": "en_US",
+	"ocr.enabled": false,
+	"theme": 2,
+	"themeAutoDetect": false,
+	"layoutButtonSequence": 1,
+	"notes.sortOrder.field": "order",
+	"notes.sortOrder.reverse": false,
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"showTrayIcon": false,
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "editor",
+				"visible": true,
+				"width": 865
+			},
+			{
+				"key": "tempContainer-ZK1cRGMfuAAjknrbzBqQYw",
+				"children": [
+					{
+						"key": "noteList",
+						"visible": true
+					},
+					{
+						"key": "sideBar",
+						"visible": true
+					}
+				],
+				"visible": true
+			}
+		],
+		"visible": true
+	},
+	"noteVisiblePanes": [
+		"editor"
+	],
+	"editor": "\"/Applications/Visual Studio Code.app\"",
+	"editor.spellcheckBeta": true,
+	"api.token": "d0415333f892a0c48b364a4583b9a31c8f7d08b7b1daa538c4f76f5f74290bd962c98d59532d544b62e7bc16458f3586b26e3222e0ff28eb324a9d74917793c8",
+	"spellChecker.languages": [
+		"ca",
+		"en-GB"
+	],
+	"windowContentZoomFactor": 100,
+	"featureFlag.autoUpdaterServiceEnabled": false
+}

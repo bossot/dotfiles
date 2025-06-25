@@ -1,0 +1,56 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Move the directory to the second line
+format = '$python$hostname$kubernetes$directory$git_branch$git_status$character'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[username]
+disabled = true
+
+[hostname]
+disabled = false
+ssh_only = true
+ssh_symbol = '🌐 '
+format = '[$ssh_symbol$hostname]($style) '
+style = 'bold dimmed grey'
+
+[directory]
+style = "blue bold"
+format = "[$path ]($style)"
+truncation_length = 1
+
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
+truncation_length = 2 
+truncation_symbol = ''
+
+[character]
+success_symbol = '[\$](bold white)'
+error_symbol = '[\$](bold red)'
+
+[python]
+format = '[${pyenv_prefix}(\($virtualenv\) )]($style)'
+
+[kubernetes]
+disabled = false
+format = '[$symbol$context]($style) '
+symbol = '☸ '
+style = 'bold yellow'
+contexts = [
+    { context_pattern = "midasd", style = "green" },
+    { context_pattern = "midasq", style = "yellow" },
+    { context_pattern = "midasp", style = "red" }
+  ]
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[line_break]
+disabled = true
+
+[cmd_duration]
+disabled = true
