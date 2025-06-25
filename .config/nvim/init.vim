@@ -37,6 +37,9 @@ Plug 'sheerun/vim-polyglot'
 " Status line
 Plug 'nvim-lualine/lualine.nvim'
 
+" Copilot Plugin
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 " Enable syntax highlighting
