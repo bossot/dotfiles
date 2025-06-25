@@ -17,6 +17,7 @@ set incsearch                 " Show search results as you type
 set ignorecase                " Ignore case in search
 set smartcase                 " Override ignorecase if search contains uppercase
 set clipboard=unnamedplus     " Use system clipboard
+set mouse=a                   " Enable mouse support
 
 " Key mappings
 nnoremap <leader>w :w<CR>     " Save file
