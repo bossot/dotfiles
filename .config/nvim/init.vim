@@ -44,6 +44,9 @@ Plug 'github/copilot.vim'
 " Tree explorer
 Plug 'kyazdani42/nvim-tree.lua'
 
+" Vim fugitive (Git integration)
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " Enable syntax highlighting
