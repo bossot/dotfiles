@@ -1,5 +1,5 @@
 " Set the leader key
-let mapleader = " "
+let mapleader = " "  " Use space as the leader key
 
 " Basic settings
 set nocompatible              " Use modern Vim features
@@ -18,12 +18,26 @@ set ignorecase                " Ignore case in search
 set smartcase                 " Override ignorecase if search contains uppercase
 set clipboard=unnamedplus     " Use system clipboard
 set mouse=a                   " Enable mouse support
+set autoindent                " Automatically indent new lines
+set showcmd                   " Show command in the bottom bar
+set backup                    " Enable backup files
+set backupdir=~/.config/nvim/backup//  " Specify backup directory
 
 " Key mappings
 nnoremap <leader>w :w<CR>     " Save file
 nnoremap <leader>q :q<CR>     " Quit Neovim
-nnoremap <leader>e :e<CR>     " Open file explorer
+nnoremap <leader>e :Ex<CR>     " Open file explorer
 nnoremap <leader>ff :Files<CR> " Fuzzy file finder (requires fzf)
+nnoremap <leader>r :source $MYVIMRC<CR>  " Reload Neovim configuration
+nnoremap <leader>n :NvimTreeToggle<CR>  " Toggle file explorer
+nnoremap <A-Up> :m .-2<CR>==  " Move the current line up
+nnoremap <A-Down> :m .+1<CR>==  " Move the current line down
+nnoremap <S-A-Up> :t .-1<CR>  " Copy the current line above
+nnoremap <S-A-Down> :t .+1<CR>  " Copy the current line below
+nnoremap <C-K> dd  " Delete the current line
+nnoremap <C-/> :s/^/\/\/<CR>  " Comment the current line (simple method)
+nnoremap <S-A-F> :!prettier --write %<CR>  " Format the current file using prettier
+nnoremap <C-G> :<C-u>call input('Go to line: ')<CR>  " Prompt to go to a specific lineey mappings
 
 " Plugin management (using vim-plug)
 call plug#begin('~/.config/nvim/plugged')
