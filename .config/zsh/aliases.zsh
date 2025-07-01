@@ -58,7 +58,7 @@ alias gcm='git checkout master'
 alias gcp='git cherry-pick'
 alias gclo='git clone --recurse-submodules'
 alias gs='git switch'
-alias gss='git switch -c'
+alias gsc='git switch -c'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
 alias gma='git commit -am'
@@ -68,7 +68,7 @@ alias gpo='git push --set-upstream origin'
 alias gcliff='git cliff -o CHANGELOG.md --no-verify'
 alias gfp='git fetch --all -p'
 
-## Midas
+## Midas Folders
 alias mi='cd $HOME/midas'
 alias be='cd $HOME/midas/backend'
 alias fe='cd $HOME/midas/frontend'

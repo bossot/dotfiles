@@ -2,10 +2,14 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Move the directory to the second line
-format = '$python$hostname$kubernetes$directory$git_branch$git_status$character'
+#format = '$python$hostname$kubernetes$directory$git_branch$git_status$character'
+format = '''
+$python$hostname$kubernetes$directory$git_branch$git_status
+$character
+'''
 
 # Inserts a blank line between shell prompts
-add_newline = false
+add_newline = true
 
 [username]
 disabled = true
@@ -24,7 +28,7 @@ truncation_length = 1
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
-truncation_length = 2 
+#truncation_length = 2 
 truncation_symbol = ''
 
 [character]
