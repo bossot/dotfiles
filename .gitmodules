@@ -1,3 +1,6 @@
 [submodule ".config/nvim/plugged/glow.nvim"]
 	path = .config/nvim/plugged/glow.nvim
 	url = https://github.com/ellisonleao/glow.nvim
+[submodule ".config/kitty/kitty-themes"]
+	path = .config/kitty/kitty-themes
+	url = https://github.com/dexpota/kitty-themes
