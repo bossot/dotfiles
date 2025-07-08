@@ -38,6 +38,7 @@ nnoremap <C-K> dd  " Delete the current line
 nnoremap <C-/> :s/^/\/\/<CR>  " Comment the current line (simple method)
 nnoremap <S-A-F> :!prettier --write %<CR>  " Format the current file using prettier
 nnoremap <C-G> :<C-u>call input('Go to line: ')<CR>  " Prompt to go to a specific lineey mappings
+nnoremap <leader>p :Glow<CR>
 
 " Plugin management (using vim-plug)
 call plug#begin('~/.config/nvim/plugged')
@@ -55,11 +56,11 @@ Plug 'nvim-lualine/lualine.nvim'
 " Copilot Plugin
 Plug 'github/copilot.vim'
 
-" Tree explorer
-Plug 'kyazdani42/nvim-tree.lua'
-
 " Vim fugitive (Git integration)
 Plug 'tpope/vim-fugitive'
+
+" Glow (Markdown preview)
+Plug 'ellisonleao/glow.nvim'
 
 call plug#end()
 
@@ -76,5 +77,7 @@ require('lualine').setup {
     component_separators = ''
   }
 }
+require('glow').setup()
 EOF
+
 

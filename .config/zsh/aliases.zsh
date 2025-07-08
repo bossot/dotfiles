@@ -65,7 +65,7 @@ alias gma='git commit -am'
 alias gmaa='git commit --amend'
 alias gp='git push'
 alias gpo='git push --set-upstream origin'
-alias gcliff='git cliff -o CHANGELOG.md --no-verify'
+alias gcliff='git cliff -o CHANGELOG.md'
 alias gfp='git fetch --all -p'
 
 ## Midas Folders

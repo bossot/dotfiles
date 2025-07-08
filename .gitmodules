@@ -1,0 +1,3 @@
+[submodule ".config/nvim/plugged/glow.nvim"]
+	path = .config/nvim/plugged/glow.nvim
+	url = https://github.com/ellisonleao/glow.nvim
