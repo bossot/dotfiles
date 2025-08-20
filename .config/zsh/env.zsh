@@ -4,6 +4,7 @@ eval "$(starship init zsh)"
 export HOMEBREW_CELLAR=/opt/homebrew/Cellar
 export HOMEBREW_PREFIX=/opt/homebrew
 export HOMEBREW_REPOSITORY=/opt/homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # MySQL client
 export LDFLAGS="-L/opt/homebrew/opt/mysql-client/lib"
