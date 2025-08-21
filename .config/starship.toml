@@ -40,8 +40,8 @@ format = '[${pyenv_prefix}(\($virtualenv\) )]($style)'
 
 [kubernetes]
 disabled = false
-format = '[$symbol$context]($style) '
-symbol = '☸ '
+format = '[$symbol]($style) '
+symbol = '☸'
 style = 'bold yellow'
 contexts = [
     { context_pattern = "midasd", style = "green" },
