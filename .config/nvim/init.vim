@@ -39,6 +39,9 @@ nnoremap <C-/> :s/^/\/\/<CR>  " Comment the current line (simple method)
 nnoremap <S-A-F> :!prettier --write %<CR>  " Format the current file using prettier
 nnoremap <C-G> :<C-u>call input('Go to line: ')<CR>  " Prompt to go to a specific lineey mappings
 nnoremap <leader>p :Glow<CR>
+nnoremap <leader>n :NvimTreeToggle<CR>
+nnoremap <leader>l :bnext<CR>   " Next buffer
+nnoremap <leader>h :bprev<CR>   " Previous buffer
 
 " Plugin management (using vim-plug)
 call plug#begin('~/.config/nvim/plugged')
@@ -62,6 +65,15 @@ Plug 'tpope/vim-fugitive'
 " Glow (Markdown preview)
 Plug 'ellisonleao/glow.nvim'
 
+" File explorer
+Plug 'kyazdani42/nvim-tree.lua'
+
+" Github color scheme
+Plug 'projekt0n/github-nvim-theme'
+
+" Sops (Secrets management)
+Plug 'trixnz/sops.nvim'
+
 call plug#end()
 
 " Enable syntax highlighting
@@ -70,14 +82,44 @@ filetype plugin indent on
 
 " Lualine configuration
 lua << EOF
-require('lualine').setup {
-  options = {
-    theme = 'gruvbox',
-    section_separators = '',
-    component_separators = ''
-  }
-}
+require("sops").setup()
 require('glow').setup()
+require("nvim-tree").setup({
+  view = {
+    width = 40,
+    side = "right",
+    relativenumber = true,
+  },
+  renderer = {
+    highlight_git = true,
+    icons = {
+      show = {
+        file = true,
+        folder = true,
+        folder_arrow = true,
+        git = true,
+      },
+    },
+    indent_markers = {
+      enable = true           -- VSCode-like indent guides
+    },
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = false,         -- Show dotfiles
+  },
+  git = {
+    enable = true,            -- Git integration, color files/folders
+  },
+  actions = {
+    open_file = {
+      quit_on_open = false,   -- Keep tree visible when opening files (like VSCode)
+    }
+  }
+})
 EOF
+
+" Set up the colorscheme
+colorscheme github_dark_default
 
 
