@@ -62,9 +62,6 @@ Plug 'github/copilot.vim'
 " Vim fugitive (Git integration)
 Plug 'tpope/vim-fugitive'
 
-" Glow (Markdown preview)
-Plug 'ellisonleao/glow.nvim'
-
 " File explorer
 Plug 'kyazdani42/nvim-tree.lua'
 
@@ -83,7 +80,6 @@ filetype plugin indent on
 " Lualine configuration
 lua << EOF
 require("sops").setup()
-require('glow').setup()
 require("nvim-tree").setup({
   view = {
     width = 40,
