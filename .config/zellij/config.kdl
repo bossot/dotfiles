@@ -3,7 +3,7 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
-	bind "Ctrl a" { SwitchToMode "tmux"; }
+        bind "Ctrl a" { SwitchToMode "Tmux"; }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -304,7 +304,7 @@ default_layout "compact"
 // Examples:
 //
 // copy_command "xclip -selection clipboard" // x11
-// copy_command "wl-copy"                    // wayland
+copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
 
 // Choose the destination for copied text
@@ -314,7 +314,7 @@ default_layout "compact"
 //   - system (default)
 //   - primary
 //
-// copy_clipboard "primary"
+copy_clipboard "primary"
 
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true
@@ -335,7 +335,7 @@ default_layout "compact"
 
 // The folder in which Zellij will look for layouts
 //
-layout_dir "~/.config/zellij/layouts"
+// layout_dir "/path/to/my/layout_dir"
 
 // The folder in which Zellij will look for themes
 //
@@ -346,6 +346,3 @@ layout_dir "~/.config/zellij/layouts"
 // Default: true
 //
 // styled_underlines false
-
-// Logging
-write_pane_contents_to_file true
