@@ -28,6 +28,13 @@ alias dr='docker run -ti --rm'
 alias b='brew'
 alias bu='brew upgrade'
 alias nvedit='nvim $HOME/.dotfiles/.config/nvim/init.vim'
+alias p='paru'
+alias pai='paru -S'
+alias pas='paru -Ss'
+alias pau='paru -Sua'
+alias pac='paru -Sc'
+alias pacc='paru -Scc'
+alias paqs='paru -Qs'
 
 ## Kubenetes
 alias k='kubectl'
