@@ -132,6 +132,8 @@ const (
 	Jump
 	JumpCancel
 	ClickHeader
+	ClickFooter
+	Multi
 )
 
 func (t EventType) AsEvent() Event {
@@ -503,7 +505,7 @@ type BorderCharacter int
 func MakeBorderStyle(shape BorderShape, unicode bool) BorderStyle {
 	if shape == BorderNone || shape == BorderPhantom {
 		return BorderStyle{
-			shape:       shape,
+			shape:       BorderNone,
 			top:         ' ',
 			bottom:      ' ',
 			left:        ' ',
