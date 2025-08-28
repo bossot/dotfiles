@@ -34,7 +34,7 @@ alias pas='paru -Ss' # Search packages
 alias paqs='paru -Qs' # Query all installed Packages
 alias paqm='paru -Qm' # Query only foreign packages (AUR)
 alias parn='paru -Rns' # Remove packages and deps and configs
-alias pao='paru -Rns $(paru -Qtdq)' # Remove orphaned packages and deps
+alias pao='paru -Qtdq | paru -Rns -' # Remove orphaned packages and deps
 alias pac='paru -Sc' # Clean cache but keep the latest package
 alias pacc='paru -Scc' # Clear cache completely
 
